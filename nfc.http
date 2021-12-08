@@ -1,0 +1,45 @@
+POST http://localhost:3030/nfc/input
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwiaWQiOiJkMWQ2MDM4Yy00NmVlLTRjYTMtYWI3MC1mOTkwNDhkNGE2NTQiLCJpYXQiOjE2Mzc3MzYyNTl9.7749oB7W7hxhyP-2rsn6uStg6duIe_l1WgfK8YiKmiI
+Content-Type: application/json
+
+{
+    "timestamp": "2021-11-25T03:56:18.721Z",
+    "carduid": "test uid",
+    "lng": -6.8840829908766,
+    "lat": 107.541306,
+    "age": 18,
+    "sex": "M",
+    "lastdengue": false,
+    "ns_1": false,
+    "anosmia": true
+}
+
+###
+
+GET http://localhost:3030/nfc/27e69db0-ad70-4764-b28a-0d930a5558ba
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBrbHNpamEyMDIxQGdtYWlsLmNvbSIsImlkIjoiNTk1YmU5NGQtMWViZS00NTA0LWI2NTUtYTFlOTA0NzhkODk1IiwiaWF0IjoxNjM3NTUxMTYxfQ.MLMSxz99k6J1gVeDzCIjndknIXHfNO8yHDNZk5eWwpI
+Content-Type: application/json
+
+###
+
+GET http://localhost:3030/nfc/data/all
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBrbHNpamEyMDIxQGdtYWlsLmNvbSIsImlkIjoiNTk1YmU5NGQtMWViZS00NTA0LWI2NTUtYTFlOTA0NzhkODk1IiwiaWF0IjoxNjM3NTUxMTYxfQ.MLMSxz99k6J1gVeDzCIjndknIXHfNO8yHDNZk5eWwpI
+Content-Type: application/json
+
+###
+
+GET http://localhost:3030/nfc/data/personal
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZpa3JleW51cnN5YWJhbmlAZ21haWwuY29tIiwiaWQiOiI0YTE2MmY0Zi0wMzgxLTQyYjQtYjU4YS1kYWE5ZjYwMGNiMmQiLCJpYXQiOjE2Mzc1NzYxNTF9.I8_xqzy4d_sjXM2U2mpYhB10gaaYDhwxtaLZqjcP7bw
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:3030/nfc/delete
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBrbHNpamEyMDIxQGdtYWlsLmNvbSIsImlkIjoiNTk1YmU5NGQtMWViZS00NTA0LWI2NTUtYTFlOTA0NzhkODk1IiwiaWF0IjoxNjM3NTUxMTYxfQ.MLMSxz99k6J1gVeDzCIjndknIXHfNO8yHDNZk5eWwpI
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:3030/nfc/delete/db86f438-b5f0-428a-a61b-0492ab705c7c
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBrbHNpamEyMDIxQGdtYWlsLmNvbSIsImlkIjoiNTk1YmU5NGQtMWViZS00NTA0LWI2NTUtYTFlOTA0NzhkODk1IiwiaWF0IjoxNjM3NTUxMTYxfQ.MLMSxz99k6J1gVeDzCIjndknIXHfNO8yHDNZk5eWwpI
+Content-Type: application/json

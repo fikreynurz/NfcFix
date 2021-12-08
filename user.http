@@ -1,0 +1,37 @@
+POST http://localhost:3030/user/register
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBrbHNpamEyMDIxQGdtYWlsLmNvbSIsImlkIjoiNTk1YmU5NGQtMWViZS00NTA0LWI2NTUtYTFlOTA0NzhkODk1IiwiaWF0IjoxNjM3NTUxMTYxfQ.MLMSxz99k6J1gVeDzCIjndknIXHfNO8yHDNZk5eWwpI
+Content-Type: application/json
+
+{
+    "fullname": "JOHN DOE",
+    "email": "johndoe@gmail.com",
+    "password": "kadal123"
+}
+
+###
+
+POST http://localhost:3030/user/login
+Content-Type: application/json
+
+{
+    "email": "johndoe@gmail.com",
+    "password": "kadal123"
+}
+
+###
+
+GET http://localhost:3030/user/data
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBrbHNpamEyMDIxQGdtYWlsLmNvbSIsImlkIjoiNTk1YmU5NGQtMWViZS00NTA0LWI2NTUtYTFlOTA0NzhkODk1IiwiaWF0IjoxNjM3NDUxNzk4fQ.6I6BW1035wRKe4NM_0sZRjnO3Kywfz2dIZ-C4ZxpSLs
+Content-Type: application/json
+
+###
+
+
+GET http://localhost:3030/user/profile
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InBrbHNpamEyMDIxQGdtYWlsLmNvbSIsImlkIjoiNTk1YmU5NGQtMWViZS00NTA0LWI2NTUtYTFlOTA0NzhkODk1IiwiaWF0IjoxNjM3NDUxNzk4fQ.6I6BW1035wRKe4NM_0sZRjnO3Kywfz2dIZ-C4ZxpSLs
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:3030/user/delete
+Content-Type: application/json

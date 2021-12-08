@@ -1,0 +1,9 @@
+POST http://localhost:3030/card/input
+Content-Type: application/json
+
+{
+    "uid": "0821930123",
+    "timestamp": "2021-12-06 19:05:39.351000+0000" ,
+    "lat": 107.55994,
+    "lng": -6.87605
+}
